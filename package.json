@@ -12,5 +12,8 @@
     "module"
   ],
   "author": "Pierre-Gilles Leymarie",
-  "license": "CC-BY-NC-SA-3.0"
+  "license": "CC-BY-NC-SA-3.0",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.27.0"
+  }
 }
