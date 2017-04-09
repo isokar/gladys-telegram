@@ -1,0 +1,16 @@
+{
+  "name": "gladys-telegram",
+  "version": "0.1.0",
+  "description": "Gladys hooks to communicate with Telegram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gladys",
+    "telegram",
+    "module"
+  ],
+  "author": "Pierre-Gilles Leymarie",
+  "license": "CC-BY-NC-SA-3.0"
+}
