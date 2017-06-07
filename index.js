@@ -3,6 +3,7 @@ module.exports = function (sails) {
 
     const init = require('./lib/init.js');
     const notify = require('./lib/notify.js');
+    const install = require('./lib/install.js');
     const telegramController = require('./controllers/telegram.post.js');
 
     gladys.on('ready', function(){
@@ -11,6 +12,7 @@ module.exports = function (sails) {
       
     return {
         notify: notify,
+        install: install,
         routes: {
             after: {
                 'POST /telegram': telegramController
