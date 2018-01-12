@@ -15,10 +15,12 @@ This module allows you to speak with Gladys on your phone with the [Telegram App
 botfather to know what to do.
 - Create a bot using the "/newbot" command in the @botfather conversation. Keep the API_KEY he gave you.
 - Install the gladys-telegram module in Gladys. Do not reboot for the moment !
-- In your Gladys dashboard go to "Parameters" => "Parameters". Complete the following parameters with your datas : `TELEGRAM_API_KEY` => your Telegram API key, and `TELEGRAM_WEBHOOK_URL` => `https://YOUR_GLADYS_IP_OR_DOMAIN/telegram`.
 - Reboot Gladys
+- In your Gladys dashboard go to "Parameters" => "Parameters". Complete the following parameters with your datas : `TELEGRAM_API_KEY` => your Telegram API key.
+- Reboot Gladys
+- Open Gladys logs (`pm2 logs gladys` on a Raspberry Pi via SSH)
 - Talk to the bot you created.
-- Open Gladys logs (`pm2 logs gladys` on a Raspberry Pi via SSH), you should see :
+- On logs, you should see :
 debug: Telegram : Received message on chat ID = XXXXXXXXX, from = "Pierre-Gilles Leymarie" with content = "Hey !"
-- Copy the chat ID copy it to user parameter `TELEGRAM_CHAT_ID`. If the parameter does not exist, create it as a user parameter. This will help Gladys know that this Telegram conversation is your user in Gladys, and that to contact you she will need to talk in this conversation (to speak in both way).
+- Copy the chat ID to user parameter `TELEGRAM_CHAT_ID`. If the parameter does not exist, create it as a user parameter. This will help Gladys know that this Telegram conversation is your user in Gladys, and that to contact you she will need to talk in this conversation (to speak in both way).
 - You can know talk to Gladys !
